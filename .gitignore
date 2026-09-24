@@ -1,0 +1,10 @@
+# Working notes stay on the machine
+PEDIDOS.md
+CONTRATO.md
+IDEIAS.md
+DESIGN.md
+
+__pycache__/
+*.pyc
+.env*
+.DS_Store
