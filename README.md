@@ -1,4 +1,24 @@
-# nonstop
+<h1 align="center">nonstop</h1>
+
+<p align="center">
+  <b>Keep a <a href="https://claude.com/claude-code">Claude Code</a> session working until you say it is done.</b><br>
+  A task list it has to empty, a sweep for loose ends before it may stop, and a keychain vault for API keys.
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue"></a>
+  <img alt="Platform: macOS | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey">
+  <img alt="Python 3.9+" src="https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white">
+  <a href="https://github.com/NspxMiguel/nonstop/actions/workflows/test.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/NspxMiguel/nonstop/test.yml?branch=main&label=tests"></a>
+</p>
+
+<p align="center">
+  <a href="#install">Install</a> ·
+  <a href="#use">Use</a> ·
+  <a href="#keys-without-pasting-them-into-the-chat">Keys</a> ·
+  <a href="#language">Language</a> ·
+  <a href="#development">Development</a>
+</p>
 
 Keep a [Claude Code](https://claude.com/claude-code) session working until **you**
 say it is done — with a task list it has to empty, a sweep for loose ends before
@@ -62,7 +82,9 @@ Safety valves so a stuck loop cannot burn your plan: 12 hours per activation,
 300 blocks per prompt, or 3 blocks in a row with no tool call in between.
 Plain conversation (a turn with no tool calls) always passes.
 
-### Task list
+<details>
+<summary><b>Task list</b></summary>
+
 
 ```bash
 nonstop add "fix save button" "test empty form" "commit and push"
@@ -76,6 +98,8 @@ nonstop status
 State lives in `~/.claude/nonstop/sessions/<session>.json`, one file per
 session, pruned after 7 idle days. Every hook decision is logged to
 `~/.claude/nonstop/log.jsonl`.
+
+</details>
 
 ### Keys without pasting them into the chat
 
@@ -120,4 +144,4 @@ and the idle valve.
 
 ## License
 
-MIT © nspxmiguel
+[MIT](LICENSE) © nspxmiguel
